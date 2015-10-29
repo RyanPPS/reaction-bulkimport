@@ -26,18 +26,18 @@ Package.on_use(function (api) {
   api.use("ecmascript");
   api.use("less");
 
-  api.use("cfs:standard-packages@0.5.9");
-  api.use("cfs:storage-adapter@0.2.2");
-  api.use("cfs:graphicsmagick@0.0.18");
-  api.use("cfs:gridfs@0.0.33");
-  api.use("cfs:filesystem@0.1.2");
-  api.use("cfs:ui@0.1.3");
+  api.use("cfs:standard-packages");
+  api.use("cfs:storage-adapter");
+  api.use("cfs:graphicsmagick");
+  api.use("cfs:gridfs");
+  api.use("cfs:filesystem");
+  api.use("cfs:ui");
   api.use("raix:ui-dropped-event");
 
   api.use("tomi:upload-server");
   api.use("tomi:upload-jquery");
 
-  api.use("reactioncommerce:core@0.9.0");
+  api.use("reactioncommerce:core");
 
   api.addFiles([
     "server/register.js",
