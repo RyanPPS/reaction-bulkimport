@@ -1,0 +1,36 @@
+<template name="bulkimport">
+
+  <h1>{{message}}</h1>
+  <p>{{description}}</p>
+  <div class="container-fluid-sm">
+    <div class="panel panel-default">
+      <form id="form-import-images" class="panel-body" role="form">
+        <div class="form-group">
+          <label>Files</label>
+          <input name="files" class="form-control" type="file" multiple>
+        </div>
+        <button type="submit" class="btn btn-default">Import</button>
+      </form>
+    </div>
+    <div>
+      <form id="product-upload-form">
+        <button type="submit" id="product-upload" class="btn btn-default">Product Upload</button>
+      </form>
+      <!--
+      <form id="find-image-form">
+        <div class="form-group">
+          <label>Variante Id</label>
+          <input name="variantId" class="form-control" type="text">
+        </div>
+        <button type="submit" id="find-image" class="btn btn-default">Find Image</button>
+      </form>
+      -->
+      <form id="clear-images-form">
+        <button type="submit" id="clear-images" class="btn btn-default">Clear Images</button>
+      </form>
+      <form id="clear-all-form">
+        <button type="submit" id="clear-all" class="btn btn-default">Clear Images</button>
+      </form>
+    </div>
+  </div>
+</template>
