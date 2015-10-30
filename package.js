@@ -1,7 +1,7 @@
 Package.describe({
   summary: "Reaction Bulk Import - Bulk import image files and run import scripts.",
-  name: "reactioncommerce:reaction-bulkimport",
-  version: "0.4.0",
+  name: "reaction-bulkimport",
+  version: "0.0.1",
   git: "https://github.com/RyanPPS/reaction-bulkimport.git"
 });
 
@@ -26,18 +26,15 @@ Package.on_use(function (api) {
   api.use("ecmascript");
   api.use("less");
 
-  api.use("cfs:standard-packages");
-  api.use("cfs:storage-adapter");
-  api.use("cfs:graphicsmagick");
-  api.use("cfs:gridfs");
-  api.use("cfs:filesystem");
-  api.use("cfs:ui");
-  api.use("raix:ui-dropped-event");
+  api.use("cfs:standard-packages@0.5.9");
+  api.use("cfs:storage-adapter@0.2.2");
+  api.use("cfs:graphicsmagick@0.0.18");
+  api.use("cfs:gridfs@0.0.33");
+  api.use("cfs:filesystem@0.1.2");
+  api.use("cfs:ui@0.1.3");
+  //api.use("raix:ui-dropped-event");
 
-  api.use("tomi:upload-server");
-  api.use("tomi:upload-jquery");
-
-  api.use("reactioncommerce:core");
+  api.use("reactioncommerce:core@0.9.4");
 
   api.addFiles([
     "server/register.js",

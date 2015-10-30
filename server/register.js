@@ -12,13 +12,13 @@ ReactionCore.registerPackage({
     {
       provides: "dashboard",
       label: "BulkImport",
-      description: "BulkImport Example",
+      description: "BulkImport",
       icon: "fa fa-upload", // glyphicon/fa
       cycle: "2", // Core, Stable, Testing (currently testing)
       container: "dashboard" // group this with settings
     },
     {
-      label: "Hello World Settings",
+      label: "Bulk Import Settings",
       route: "dashboard/bulkimport",
       provides: "settings",
       container: "bulkimport",
