@@ -7,7 +7,7 @@ Bulk import images, tags and products. Still in development.
 
 Clone to reaction/packages
 
-	cd reaction/packages
+	cd reaction
 	git submodule add -f https://github.com/RyanPPS/reaction-bulkimport.git pakcages/reaction-bulkimport
 
 

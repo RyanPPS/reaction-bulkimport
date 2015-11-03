@@ -36,14 +36,17 @@ Package.on_use(function (api) {
 
   api.use("reactioncommerce:core@0.9.4");
 
+  // Server: Main bulkimport files
   api.addFiles([
-    "server/register.js",
+    "server/register.js", // register as a reaction package
     "server/methods/import.js",
     "server/methods/product_import.js",
-  ], ["server"]); // register as a reaction package
+  ], ["server"]);
 
-  api.addFiles("common/routing.js", ["client", "server"]); // common routing
+  // common routing
+  api.addFiles("common/routing.js", ["client", "server"]);
 
+  // Client: Main bulkimport files
   api.addFiles([
     "client/templates/bulkimport/bulkimport.html",
     "client/templates/bulkimport/bulkimport.js",
@@ -54,6 +57,10 @@ Package.on_use(function (api) {
     "client/templates/dashboard/widget/widget.less"
   ], ["client"]);
 
+  // Publications
+  api.addFiles("server/publications/products.js", "server");
+
+  // Assets
   api.addAssets("private/data/products.json", "server");
   api.addAssets("private/data/productsSample.json", "server");
 });

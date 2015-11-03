@@ -65,8 +65,6 @@ function createTag(value) {
           "name": value,
           "isTopLevel": true,
           "_id": Random.id(),
-          "createdAt": new Date(),
-          "updatedAt": new Date()
         }
       } else {
         tag = {
@@ -74,8 +72,6 @@ function createTag(value) {
           "name": value,
           "isTopLevel": false,
           "_id": Random.id(),
-          "createdAt": new Date(),
-          "updatedAt": new Date()
         }
       }
       ReactionCore.Collections.Tags.insert(tag);

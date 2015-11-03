@@ -3,10 +3,14 @@ Template.bulkimport.helpers({
   description: "Testing uploads."
 });
 
+Template.bulkimport.onCreated( function() {
+  this.subscribe('ProductImport');
+});
 
-Meteor.subscribe('Products');
+
 
 function uploadHandler(event) {
+
   let shopId = ReactionCore.getShopId();
   let userId = Meteor.userId();
   let files = event.target.files.files;
@@ -47,6 +51,7 @@ function uploadHandler(event) {
       console.log("Not Found " + parts[0]);
       console.log(notFound);
     }
+
 
   }
 }
